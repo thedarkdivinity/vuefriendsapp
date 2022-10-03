@@ -3,7 +3,7 @@
         
     <div  v-for="friend in friends" :key="friend._id" class="row">
   
-  <FriendComponent  @delete-friend="$emit('delete-friend',friend._id)" :friend="friend"/>
+  <FriendComponent  @delete-friend="$emit('delete-friend',friend._id)" @update-friend="$emit('update-friend',friend)" :friend="friend"/>
   
 </div>
 </div>
