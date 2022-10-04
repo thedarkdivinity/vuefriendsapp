@@ -58,10 +58,20 @@
                   this.addressMsg='cant be blank'
                   flag=true
                 }
+                if(this.address.length>0 && this.address.length<5)
+                {
+                  this.addressMsg='Address must be atleast 5 letters'
+                  flag=true
+                }
                 if(this.name=='')
                 {
                   this.nameMsg='cant be blank'
                   flag=true
+                }
+                if(this.name.length>0 && this.name.length<5)
+                {
+                  this.nameMsg='Name must be atleast 5 letters'
+                  flag=true 
                 }
                 if(flag)
                 {
